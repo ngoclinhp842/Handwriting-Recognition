@@ -1,6 +1,5 @@
 # Handwriting-Recognition
-A neural network that recognizes which human handwritten digit is shown in an image (i.e. the numbers 0, 1, ..., 9
-
+An RBF <a href="https://towardsdatascience.com/radial-basis-function-neural-network-simplified-6f26e3d5e04d">link text</a> neural network that recognizes which human handwritten digit (i.e. the numbers 0, 1, ..., 9) is shown in MNIST image dataset with 91.5% accuracy.
 ## 🚀 Running Handwriting-Recognition:
 To run digitReg.py
 
