@@ -30,7 +30,6 @@ np.set_printoptions(suppress=True, precision=5)
 
 
 def main():
-    
     x_train = np.load('data/mnist_train_data.npy')
     x_test = np.load('data/mnist_test_data.npy')
     y_train = np.load('data/mnist_train_labels.npy')
