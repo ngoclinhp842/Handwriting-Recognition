@@ -8,31 +8,15 @@ To run digitReg.py
 python3 digitReg.py
 ```
 
-## ☘️ Description 
-Improve performance on MNIST with PCA
+## ☘️ Description
+I build an RBF network which only consists of an input layer, a single hidden layer, and an output layer to recognize human handwritten digit and train the network on 60,000 images and test the network with 10,000 images. 
+- Each image is 28x28 pixels.
+- The images are grayscale (no RGB colors).
+- Each image (data sample) contains ONE of 10 numeric digit $0, 1, 2, ..., 8, 9.
 
-Using all 768 features (pixels) in each image may not be very helpful for classification. For example, pixels around the border are almost always white. Transform the dataset(s) using PCA to compress the number of features before training your RBF network. Experiment with PCA to improve classification accuracy and runtime performance.
+Using all 768 features (pixels) in each image may not be very helpful for classification. For example, pixels around the border are almost always white. Thus, I transform the dataset(s) using PCA to compress the number of features before training your RBF network to experiment with PCA to improve classification accuracy and runtime performance.
 
 ## 👀 Results:
-* Training RBF without PCA took 4.576543 seconds
-
-Accuracy on the training set: 94.55% 
-
-Accuracy on the testing set: 91.3% 
-
-* Pca took 99.737493 seconds
-
-Training took 134.519913 seconds
-
-Accuracy on the training set: 95.0% 
-
-Accuracy on the testing set: 10.83% 
-
-## 📝 Analysis:
-
-## 
-
-## Finding
 1. Record the time it took to train RBF without PCA. I add time.process_time() from time module to record the training time
 
         Training RBF without PCA took 1556.191151 seconds
@@ -55,8 +39,8 @@ Algorithm: Keeping the same number of training samples and hidden units
         Training RBF after PCA took 1725.963101 seconds
         Accuracy on the training set: 94.1% 
         Accuracy on the testing set: 10.36% 
-        
-## Analysis
+
+## 📝 Analysis:
 
 PCA is useful for reducing the dimensionality of high-dimensional data by projecting it onto a lower-dimensional space while preserving most of the variance. This can help to remove redundant or noisy features from the input data, which can improve the performance of the RBF network by reducing overfitting and increasing the network's ability to generalize to new data.
 
